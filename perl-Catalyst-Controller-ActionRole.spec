@@ -17,8 +17,8 @@ BuildRequires: perl(Moose)
 BuildRequires: perl(MooseX::Types::Moose)
 BuildRequires: perl(String::RewritePrefix)
 BuildRequires: perl(namespace::clean)
+BuildRequires: perl-devel
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module allows to apply roles to the 'Catalyst::Action's for different
@@ -48,16 +48,29 @@ definition:
 %make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc Changes META.yml LICENSE README
 %{_mandir}/man3/*
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Sat Apr 16 2011 Funda Wang <fwang@mandriva.org> 0.150.0-2mdv2011.0
++ Revision: 653553
+- rebuild for updated spec-helper
+
+* Sat Aug 28 2010 Jérôme Quelin <jquelin@mandriva.org> 0.150.0-1mdv2011.0
++ Revision: 573787
+- update to 0.15
+
+* Tue Jul 27 2010 Shlomi Fish <shlomif@mandriva.org> 0.140.0-1mdv2011.0
++ Revision: 561178
+- import perl-Catalyst-Controller-ActionRole
+
+
+* Thu Jul 15 2010 cpan2dist 0.14-1mdv
+- initial mdv release, generated with cpan2dist
