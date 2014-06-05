@@ -1,2 +1,4 @@
+removed_sources:
+  Catalyst-Controller-ActionRole-0.15.tar.gz: 575f3b91f2d4c3aeed39f00fd557dffa7a76f71b
 sources:
-  "Catalyst-Controller-ActionRole-0.15.tar.gz": 575f3b91f2d4c3aeed39f00fd557dffa7a76f71b
+  Catalyst-Controller-ActionRole-0.16.tar.gz: 12ca8cc802f2d03445d1a3bd11b4310669cc70f7
