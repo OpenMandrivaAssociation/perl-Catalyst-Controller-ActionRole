@@ -7,6 +7,7 @@ Release:    1
 
 Summary:    Apply roles to action instances
 
+
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
@@ -55,6 +56,7 @@ definition:
 %doc Changes META.yml LICENSE README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 
 
 
